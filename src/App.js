@@ -2,24 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const showNotification = () => {
+    Notification.requestPermission().then((perm) => {
+      console.log(perm)
+    })
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>added text to check changes</p>
-      </header>
-    </div>
+    <button onClick={showNotification}>Show notification</button>
   );
 }
 
