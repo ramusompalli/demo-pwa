@@ -47,9 +47,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <!-- <script>
+  <script>
       if("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("%PUBLIC_URL%/firebase-messaging-sw.js").then((registration) => {
+        navigator.serviceWorker.register("%PUBLIC_URL%/OneSignalSDKWorker.js").then((registration) => {
           registration.addEventListener("updatefound", () => {
             const installingWorker = registration.installing;
             console.log("A new Service worker is being installed", installingWorker);
@@ -61,7 +61,7 @@
       } else {
         console.error("Service workers not supportd")
       }
-    </script> -->
+    </script>
 </body>
 
 </html>
