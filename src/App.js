@@ -1,7 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import OneSignal from 'react-onesignal';
-import React, {useEffect} from 'react';
 
 function App() {
 
@@ -10,12 +8,6 @@ function App() {
       console.log(perm)
     })
   }
-
-  useEffect(() => {
-    OneSignal.init({
-      appId: "102bdd57-2a9e-4d85-bfde-f14a51e0bb6f"
-    });
-  }, []);
 
   return (
     <button onClick={showNotification}>Show notification</button>
