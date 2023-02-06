@@ -2,21 +2,21 @@ importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js")
 importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js")
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAMFPVQyRkJIPAEx5vuXS9kK22xAYmXzLY",
-    authDomain: "push-demo-e6c01.firebaseapp.com",
-    projectId: "push-demo-e6c01",
-    storageBucket: "push-demo-e6c01.appspot.com",
-    messagingSenderId: "777905774892",
-    appId: "1:777905774892:web:957adc7c5584c5891e8c89",
-    measurementId: "G-3BKPGRG1SG"
-  };
-  
-  // Initialize Firebase
+    apiKey: "AIzaSyA0GGxLpa-vS-eQOwr45oR_XHz1sP3bIOQ",
+    authDomain: "pwa-demo-2ff28.firebaseapp.com",
+    projectId: "pwa-demo-2ff28",
+    storageBucket: "pwa-demo-2ff28.appspot.com",
+    messagingSenderId: "61028944759",
+    appId: "1:61028944759:web:df86ccf6bef8a215106f72",
+    measurementId: "G-N845Z1M2S9"
+};
+
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 const messaging = firebase.messaging();
 
-var getToken = async() => {
+var getToken = async () => {
     const token = await messaging.getToken();
     console.log(token);
 }
