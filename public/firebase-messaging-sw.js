@@ -16,6 +16,10 @@ firebase.initializeApp(firebaseConfig);
 
 const messaging = firebase.messaging();
 
+messaging.onBackgroundMessage((message) => {
+    console.log(message)
+})
+
 var getToken = async () => {
     const token = await messaging.getToken();
     console.log(token);
