@@ -3,20 +3,16 @@ import React from 'react';
 import './header.css';
 
 const Header = () => {
-    return(
+    return (
         <header className='header'>
             <div>
-                <img src="menu_FILL0_wght400_GRAD0_opsz48.svg" style={{backgroundColor: 'white'}} alt='menu'/>
+                {/* <img src="menu_FILL0_wght400_GRAD0_opsz48.svg" style={{backgroundColor: 'white'}} alt='menu'/> */}
             </div>
-            <div>
-                <div>
-                    <img src="../United-Airlines-Emblem.png" className='img' alt="united airelines"/>
-                    <strong className='title' >UNITED</strong>
-                </div>
+            <div className='logo'>
+                <img src="../united-image.jpg" className='img' alt="united airelines" />
+                <strong className='title' >UNITED</strong>
             </div>
-            <div>
-                <p className='avatar'>G</p>
-            </div>
+            <div className='avatar'>G</div>
         </header>
     );
 }
