@@ -7,6 +7,9 @@ const BASE_URL = "https://onesignal.com/api/v1";
 const body = {
     app_id: ONESIGNAL_APP_ID,
     included_segments: ['Subscribed Users'],
+    data: {
+    	foo: 'bar',
+    },
     contents: {
     	en: 'Sample Push Message',
     },
