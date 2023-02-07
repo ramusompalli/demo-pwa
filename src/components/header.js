@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <header className='header'>
             <div>
-                <img src="menu_FILL0_wght400_GRAD0_opsz48.svg" style={{backgroundColor: 'white'}}/>
+                <img src="menu_FILL0_wght400_GRAD0_opsz48.svg" style={{backgroundColor: 'white'}} alt='menu'/>
             </div>
             <div>
                 <div>
