@@ -14,7 +14,7 @@ const OnlineCheckIn = () => {
     return (
         <>
             <Header />
-            <input type='checkbox' value={acceptAgreement} onChange={changeAgreement}/>
+            <input type='checkbox' value={acceptAgreement} onChange={changeAgreement}/><span>* Agree to te term and Conditions</span>
             {/* <button disabled={!acceptAgreement}>Confirm Booking</button> */}
             <Button text='Confirm Booking' onClickMethod={createNotification} disabled={!acceptAgreement}/>
         </>
