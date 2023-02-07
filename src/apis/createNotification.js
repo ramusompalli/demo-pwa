@@ -8,18 +8,18 @@ const body = {
     app_id: ONESIGNAL_APP_ID,
     included_segments: ['Subscribed Users'],
     data: {
-    	foo: 'bar',
+        foo: 'bar',
     },
     contents: {
-    	en: 'Sample Push Message',
+        en: 'Sample Push Message',
     },
 };
 
 const optionsBuilder = (method, path, body) => {
     return {
-            method,
-            'url': `${BASE_URL}/${path}`,
-            'headers': {
+        method,
+        'url': `${BASE_URL}/${path}`,
+        'headers': {
             'Content-Type': 'application/json',
             'Authorization': `Basic ${API_KEY}`,
         },
@@ -29,15 +29,25 @@ const optionsBuilder = (method, path, body) => {
 
 
 const createNotification = async () => {
-    const options = optionsBuilder("post", "notifications", body);
-    console.log(options);
-    try {
-        const response = await axios(options);
-        return response.data;
-    } catch (error) {
-        console.error(error);
-        return error;
-    }
+    const res = await axios.post(
+        `${BASE_URL}/notifications`,
+        {
+            app_id: ONESIGNAL_APP_ID,
+            included_segments: ['Subscribed Users'],
+            data: {
+                foo: 'bar',
+            },
+            contents: {
+                en: 'Sample Push Message',
+            },
+        },
+        {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Basic ${API_KEY}`,
+            }
+        },
+    )
 }
 
 export default createNotification;
