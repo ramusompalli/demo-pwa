@@ -16,7 +16,6 @@ const body = {
 };
 
 const optionsBuilder = (method, path, body) => {
-    console.log(method,path, body);
     return {
             method,
             'url': `${BASE_URL}/${path}`,
@@ -31,6 +30,7 @@ const optionsBuilder = (method, path, body) => {
 
 const createNotification = async () => {
     const options = optionsBuilder("post", "notifications", body);
+    console.log(options);
     try {
         const response = await axios(options);
         return response.data;
