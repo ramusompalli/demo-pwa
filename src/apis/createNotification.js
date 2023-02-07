@@ -22,6 +22,7 @@ const optionsBuilder = (method, path, body) => {
             'url': `${BASE_URL}/${path}`,
             'headers': {
             'Content-Type': 'application/json',
+            'accept': 'application/json',
             'Authorization': `Basic ${API_KEY}`,
         },
         body: body ? JSON.stringify(body) : null
