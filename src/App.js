@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import OneSignal from 'react-onesignal';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
+import createNotification from './apis/createNotification';
 
 function App() {
 
@@ -18,7 +19,10 @@ function App() {
   }, []);
 
   return (
-    <button onClick={showNotification}>Show notification</button>
+    <>
+      <button onClick={showNotification}>Show notification</button>
+      <button onClick={createNotification}>create notification</button>
+    </>
   );
 }
 
