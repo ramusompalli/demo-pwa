@@ -1,0 +1,9 @@
+.flight-details {
+    text-align: center;
+}
+
+.flight-from-to-end {
+    display: flex;  
+    align-content: center;
+    justify-content: space-around;
+}

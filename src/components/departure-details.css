@@ -1,0 +1,31 @@
+.checkin-due-time {
+    text-align: center;
+}
+
+.flight-time-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.departure-details {
+    text-align: center;
+    border: 1px solid rgb(188, 177, 177);
+}
+
+.time-remaining {
+    color: red;
+}
+
+.time {
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.info-title {
+    font-style: italic;
+    font-size: 80%;
+}
+
+.gate-details {
+    color: blue;
+}

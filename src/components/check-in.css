@@ -1,0 +1,12 @@
+.check-in {
+   margin-top: 10px;
+   text-align: center;
+}
+
+.check-in-button {
+    background: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
