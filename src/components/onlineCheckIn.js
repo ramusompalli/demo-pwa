@@ -27,7 +27,11 @@ const OnlineCheckIn = () => {
                 <br />
                 <div>
                     <input type='text' placeholder='PNR/ Booking reference' className='input-text' />
+                    <br />
+                    <br />
                     <input type='text' placeholder='Email / last name' className='input-text' />
+                    <br />
+                    <br />
                 </div>
                 <input type='checkbox' value={acceptAgreement} onChange={changeAgreement} /><span>* Agree to the terms and Conditions</span>
                 {/* <button disabled={!acceptAgreement}>Confirm Booking</button> */}
