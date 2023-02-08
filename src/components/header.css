@@ -3,7 +3,7 @@
     text-align: center;
     /* width: 35px; */
     /* height: 35px; */
-    padding: 8px;
+    padding: 8px 6px 8px 6px;
     border-radius: 50%;
     background-color: orange;
 }
