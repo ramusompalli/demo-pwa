@@ -19,9 +19,10 @@ const OnlineCheckIn = () => {
             <div className='online-check-in-page'>
                 <div>
                     <h1>Web Check-in</h1>
-                    Web check-in for passengers is available 48 hrs to 60 mins before domestic flight departure, and 24 hrs to 75 mins before international flight departure.
-                    Airport Check-in at counter is available 60 mins before domestic flight departure, and 75 mins before international flight departure.
-
+                    <p>
+                        Web check-in for passengers is available 48 hrs to 60 mins before domestic flight departure, and 24 hrs to 75 mins before international flight departure.
+                        Airport Check-in at counter is available 60 mins before domestic flight departure, and 75 mins before international flight departure.
+                    </p>
                 </div>
                 <br />
                 <div>
