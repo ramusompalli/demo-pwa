@@ -6,6 +6,7 @@
     margin: 0px 20px;
     border: none;
     border-bottom: 1px solid grey;
+    width: 300px;
 }
 .input-text:focus{
     outline: none;
