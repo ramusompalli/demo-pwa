@@ -16,9 +16,9 @@ const notificationCreator = async (text, minutes) => {
                 en: text,
             },
             send_after: new Date(new Date().getTime() + minutes * 60000),
-            chrome_web_image: 'https://demo-pwa-six.vercel.app/United-Airlines-Emblem.png',
-            chrome_web_badge: 'https://demo-pwa-six.vercel.app/United-Airlines-Emblem.png',
-            chrome_web_icon: 'https://demo-pwa-six.vercel.app/United-Airlines-Emblem.png',
+            chrome_web_image: 'https://demo-pwa-six.vercel.app/united-image192.jpg',
+            chrome_web_badge: 'https://demo-pwa-six.vercel.app/united-image192.jpg',
+            chrome_web_icon: 'https://demo-pwa-six.vercel.app/united-image192.jpg',
         },
         {
             headers: {
