@@ -9,7 +9,7 @@ const Header = () => {
                 {/* <img src="menu_FILL0_wght400_GRAD0_opsz48.svg" style={{backgroundColor: 'white'}} alt='menu'/> */}
             </div>
             <div className='logo'>
-                <img src="../united-image.jpg" className='img' alt="united airelines" />
+                <img src="../LTIMindtree192.jpg" className='img' alt="united airelines" />
                 <strong className='title' >UNITED</strong>
             </div>
             <div className='avatar'>G</div>
