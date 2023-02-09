@@ -15,6 +15,9 @@ const notificationCreator = async (text, minutes) => {
             contents: {
                 en: text,
             },
+            headings: {
+                en: 'demo',
+            },
             send_after: new Date(new Date().getTime() + minutes * 60000),
             chrome_web_image: 'https://demo-pwa-six.vercel.app/LTIMindtree192.jpg',
             chrome_web_badge: 'https://demo-pwa-six.vercel.app/LTIMindtree192.jpg',
@@ -31,8 +34,8 @@ const notificationCreator = async (text, minutes) => {
 
 const createNotification = async () => {
     console.log("Sending Notification");
-    notificationCreator('Thanks for Web check In', 0);
-    notificationCreator('You have succesfully checked in, Please follow checkin guidelines', 3);
+    notificationCreator('You have succesfully checked in, Please follow checkin guidelines your gate number 24 Seat number 5F', 0);
+    notificationCreator('Boarding has Started Please reach out to the gate', 3);
 }
 
 export default createNotification;
