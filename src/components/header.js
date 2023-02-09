@@ -9,8 +9,8 @@ const Header = () => {
                 {/* <img src="menu_FILL0_wght400_GRAD0_opsz48.svg" style={{backgroundColor: 'white'}} alt='menu'/> */}
             </div>
             <div className='logo'>
-                <img src="../LTIMindtree192.jpg" className='img' alt="united airelines" />
-                <strong className='title' >UNITED</strong>
+                <img src="../LTIMindtree192.jpg" className='img' alt="demo" />
+                <strong className='title' >Demo</strong>
             </div>
             <div className='avatar'>G</div>
         </header>
