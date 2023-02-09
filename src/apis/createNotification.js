@@ -35,7 +35,7 @@ const notificationCreator = async (text, minutes) => {
 const createNotification = async () => {
     console.log("Sending Notification");
     notificationCreator('You have succesfully checked in, Please follow checkin guidelines your gate number 24 Seat number 5F', 0);
-    notificationCreator('Boarding has Started Please reach out to the gate', 3);
+    notificationCreator('Boarding has Started Please reach out to the gate number 24', 3);
 }
 
 export default createNotification;
